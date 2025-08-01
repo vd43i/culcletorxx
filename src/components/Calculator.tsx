@@ -220,7 +220,7 @@ const Calculator = () => {
           <div className="flex items-center justify-between mb-2">
             <div className="flex items-center gap-2">
               <CalculatorIcon className="w-6 h-6 text-primary" />
-              <h1 className="text-lg font-semibold">حاسبة بريميوم</h1>
+              <h1 className="text-lg font-semibold">آلة حاسبة</h1>
             </div>
             <div className="flex gap-2">
               <Button
