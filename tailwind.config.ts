@@ -61,7 +61,22 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Calculator specific colors
+				'calc-display': 'hsl(var(--calc-display))',
+				'calc-display-text': 'hsl(var(--calc-display-text))',
+				'btn-number': 'hsl(var(--btn-number))',
+				'btn-number-hover': 'hsl(var(--btn-number-hover))',
+				'btn-number-text': 'hsl(var(--btn-number-text))',
+				'btn-operator': 'hsl(var(--btn-operator))',
+				'btn-operator-hover': 'hsl(var(--btn-operator-hover))',
+				'btn-operator-text': 'hsl(var(--btn-operator-text))',
+				'btn-equals': 'hsl(var(--btn-equals))',
+				'btn-equals-hover': 'hsl(var(--btn-equals-hover))',
+				'btn-equals-text': 'hsl(var(--btn-equals-text))',
+				'btn-clear': 'hsl(var(--btn-clear))',
+				'btn-clear-hover': 'hsl(var(--btn-clear-hover))',
+				'btn-clear-text': 'hsl(var(--btn-clear-text))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
