@@ -13,11 +13,11 @@ interface ThemeSelectorProps {
 }
 
 const themes = [
-  { id: 'theme-blue', name: 'أزرق', color: 'hsl(220, 60%, 55%)' },
-  { id: 'theme-purple', name: 'بنفسجي', color: 'hsl(260, 60%, 55%)' },
-  { id: 'theme-green', name: 'أخضر', color: 'hsl(140, 60%, 50%)' },
-  { id: 'theme-orange', name: 'برتقالي', color: 'hsl(25, 85%, 55%)' },
-  { id: 'theme-pink', name: 'وردي', color: 'hsl(330, 60%, 55%)' },
+  { id: 'theme-blue', name: 'أزرق', color: '220, 60%, 55%' },
+  { id: 'theme-purple', name: 'بنفسجي', color: '260, 60%, 55%' },
+  { id: 'theme-green', name: 'أخضر', color: '140, 60%, 50%' },
+  { id: 'theme-orange', name: 'برتقالي', color: '25, 85%, 55%' },
+  { id: 'theme-pink', name: 'وردي', color: '330, 60%, 55%' },
 ];
 
 const ThemeSelector = ({ currentTheme, onThemeChange }: ThemeSelectorProps) => {
@@ -37,7 +37,7 @@ const ThemeSelector = ({ currentTheme, onThemeChange }: ThemeSelectorProps) => {
           >
             <div
               className="w-4 h-4 rounded-full border border-border/50"
-              style={{ backgroundColor: theme.color }}
+              style={{ backgroundColor: `hsl(${theme.color})` }}
             />
             <span className="text-sm">{theme.name}</span>
             {currentTheme === theme.id && (

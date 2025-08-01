@@ -14,7 +14,7 @@
     --calc-display: 0 0% 100%;
     --calc-display-text: 220 13% 13%;
     
-    /* Button System - Neumorphic Design */
+    /* Button System - Neumorphic Design with Purple Glow */
     --btn-number: 0 0% 95%;
     --btn-number-hover: 0 0% 92%;
     --btn-number-text: 220 13% 13%;
@@ -31,18 +31,18 @@
     --btn-clear-hover: 0 70% 50%;
     --btn-clear-text: 0 0% 100%;
     
-    /* Neumorphic Shadows */
+    /* Neumorphic Shadows with Purple Glow */
     --shadow-light: 0 0% 100%;
     --shadow-dark: 220 13% 85%;
     --shadow-inset-light: 220 13% 85%;
     --shadow-inset-dark: 0 0% 100%;
+    --shadow-glow: 260 80% 70%;
+    --shadow-glow-blue: 220 80% 70%;
     
-    /* Theme Colors */
-    --theme-blue: 220 60% 55%;
-    --theme-purple: 260 60% 55%;
-    --theme-green: 140 60% 50%;
-    --theme-orange: 25 85% 55%;
-    --theme-pink: 330 60% 55%;
+    /* Theme Colors - Default Blue */
+    --current-theme: 220 60% 55%;
+    --current-theme-light: 220 60% 85%;
+    --current-theme-dark: 220 60% 35%;
     
     --primary: 220 60% 55%;
     --primary-foreground: 0 0% 100%;
@@ -58,22 +58,98 @@
     --input: 220 13% 91%;
     --ring: 220 60% 55%;
     --radius: 1.2rem;
+  }
 
-    --sidebar-background: 0 0% 98%;
+  /* Theme Variations */
+  .theme-blue {
+    --current-theme: 220 60% 55%;
+    --current-theme-light: 220 60% 85%;
+    --current-theme-dark: 220 60% 35%;
+    --btn-operator: 220 60% 55%;
+    --btn-operator-hover: 220 60% 50%;
+    --primary: 220 60% 55%;
+  }
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+  .theme-purple {
+    --current-theme: 260 60% 55%;
+    --current-theme-light: 260 60% 85%;
+    --current-theme-dark: 260 60% 35%;
+    --btn-operator: 260 60% 55%;
+    --btn-operator-hover: 260 60% 50%;
+    --primary: 260 60% 55%;
+  }
 
-    --sidebar-primary: 240 5.9% 10%;
+  .theme-green {
+    --current-theme: 140 60% 50%;
+    --current-theme-light: 140 60% 80%;
+    --current-theme-dark: 140 60% 30%;
+    --btn-operator: 140 60% 50%;
+    --btn-operator-hover: 140 60% 45%;
+    --primary: 140 60% 50%;
+  }
 
-    --sidebar-primary-foreground: 0 0% 98%;
+  .theme-orange {
+    --current-theme: 25 85% 55%;
+    --current-theme-light: 25 85% 80%;
+    --current-theme-dark: 25 85% 35%;
+    --btn-operator: 25 85% 55%;
+    --btn-operator-hover: 25 85% 50%;
+    --primary: 25 85% 55%;
+  }
 
-    --sidebar-accent: 240 4.8% 95.9%;
+  .theme-pink {
+    --current-theme: 330 60% 55%;
+    --current-theme-light: 330 60% 80%;
+    --current-theme-dark: 330 60% 35%;
+    --btn-operator: 330 60% 55%;
+    --btn-operator-hover: 330 60% 50%;
+    --primary: 330 60% 55%;
+  }
 
-    --sidebar-accent-foreground: 240 5.9% 10%;
+  /* Dark Mode Theme Variations */
+  .dark.theme-blue {
+    --current-theme: 220 70% 55%;
+    --current-theme-light: 220 70% 80%;
+    --current-theme-dark: 220 70% 30%;
+    --btn-operator: 220 70% 55%;
+    --btn-operator-hover: 220 70% 60%;
+    --primary: 220 70% 55%;
+  }
 
-    --sidebar-border: 220 13% 91%;
+  .dark.theme-purple {
+    --current-theme: 260 70% 55%;
+    --current-theme-light: 260 70% 80%;
+    --current-theme-dark: 260 70% 30%;
+    --btn-operator: 260 70% 55%;
+    --btn-operator-hover: 260 70% 60%;
+    --primary: 260 70% 55%;
+  }
 
-    --sidebar-ring: 217.2 91.2% 59.8%;
+  .dark.theme-green {
+    --current-theme: 140 70% 50%;
+    --current-theme-light: 140 70% 75%;
+    --current-theme-dark: 140 70% 25%;
+    --btn-operator: 140 70% 50%;
+    --btn-operator-hover: 140 70% 55%;
+    --primary: 140 70% 50%;
+  }
+
+  .dark.theme-orange {
+    --current-theme: 25 85% 55%;
+    --current-theme-light: 25 85% 75%;
+    --current-theme-dark: 25 85% 35%;
+    --btn-operator: 25 85% 55%;
+    --btn-operator-hover: 25 85% 60%;
+    --primary: 25 85% 55%;
+  }
+
+  .dark.theme-pink {
+    --current-theme: 330 70% 55%;
+    --current-theme-light: 330 70% 75%;
+    --current-theme-dark: 330 70% 35%;
+    --btn-operator: 330 70% 55%;
+    --btn-operator-hover: 330 70% 60%;
+    --primary: 330 70% 55%;
   }
 
   .dark {
@@ -110,13 +186,6 @@
     --shadow-glow: 260 80% 60%;
     --shadow-glow-blue: 220 80% 60%;
     
-    /* Theme Colors - Dark */
-    --theme-blue: 220 70% 55%;
-    --theme-purple: 260 70% 55%;
-    --theme-green: 140 70% 50%;
-    --theme-orange: 25 85% 55%;
-    --theme-pink: 330 70% 55%;
-    
     --primary: 260 60% 45%;
     --primary-foreground: 0 0% 100%;
     --secondary: 220 20% 15%;
@@ -130,66 +199,74 @@
     --border: 220 20% 18%;
     --input: 220 20% 18%;
     --ring: 260 60% 45%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-background: 240 5% 10%;
+    --sidebar-foreground: 240 5% 96%;
+    --sidebar-primary: 224 76% 48%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 240 4% 16%;
+    --sidebar-accent-foreground: 240 5% 96%;
+    --sidebar-border: 240 4% 16%;
+    --sidebar-ring: 217 91% 60%;
   }
 }
 
-/* Calculator Neumorphic Shadows & Animations */
+/* Calculator Neumorphic Shadows & Animations with Purple Glow */
 @layer components {
   .calc-btn {
     @apply transition-all duration-200 ease-in-out;
+    position: relative;
     box-shadow: 
       8px 8px 16px hsl(var(--shadow-dark)),
-      -8px -8px 16px hsl(var(--shadow-light));
+      -8px -8px 16px hsl(var(--shadow-light)),
+      0 0 20px hsl(var(--shadow-glow) / 0.15);
   }
 
   .calc-btn:hover {
     box-shadow: 
       6px 6px 12px hsl(var(--shadow-dark)),
-      -6px -6px 12px hsl(var(--shadow-light));
+      -6px -6px 12px hsl(var(--shadow-light)),
+      0 0 25px hsl(var(--shadow-glow) / 0.25);
     transform: translateY(-1px);
   }
 
   .calc-btn:active {
     box-shadow: 
       inset 4px 4px 8px hsl(var(--shadow-inset-light)),
-      inset -4px -4px 8px hsl(var(--shadow-inset-dark));
+      inset -4px -4px 8px hsl(var(--shadow-inset-dark)),
+      0 0 15px hsl(var(--shadow-glow) / 0.3);
     transform: translateY(1px);
   }
 
+  /* Enhanced Purple Glow for Dark Mode */
   .dark .calc-btn {
     box-shadow: 
       8px 8px 16px hsl(var(--shadow-dark)),
       -8px -8px 16px hsl(var(--shadow-light)),
-      0 0 20px hsl(var(--shadow-glow) / 0.3);
+      0 0 25px hsl(var(--shadow-glow) / 0.4);
   }
 
   .dark .calc-btn:hover {
     box-shadow: 
       6px 6px 12px hsl(var(--shadow-dark)),
       -6px -6px 12px hsl(var(--shadow-light)),
-      0 0 30px hsl(var(--shadow-glow) / 0.5);
+      0 0 35px hsl(var(--shadow-glow) / 0.6),
+      0 0 60px hsl(var(--shadow-glow-blue) / 0.3);
     transform: translateY(-1px);
   }
 
   .calc-display {
     box-shadow: 
       inset 6px 6px 12px hsl(var(--shadow-dark)),
-      inset -6px -6px 12px hsl(var(--shadow-light));
+      inset -6px -6px 12px hsl(var(--shadow-light)),
+      0 0 20px hsl(var(--shadow-glow) / 0.1);
   }
 
-  .theme-blue { --current-theme: var(--theme-blue); }
-  .theme-purple { --current-theme: var(--theme-purple); }
-  .theme-green { --current-theme: var(--theme-green); }
-  .theme-orange { --current-theme: var(--theme-orange); }
-  .theme-pink { --current-theme: var(--theme-pink); }
+  .dark .calc-display {
+    box-shadow: 
+      inset 6px 6px 12px hsl(var(--shadow-dark)),
+      inset -6px -6px 12px hsl(var(--shadow-light)),
+      0 0 30px hsl(var(--shadow-glow) / 0.2);
+  }
 }
 
 @layer base {
